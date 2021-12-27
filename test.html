@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="file:///D:/Frameworks%20and%20%20icons/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css"> 
+   <style>
+     .Player{
+       width: 90%;
+       height: 70px;
+       margin-left: 50px;
+       background-color: ghostwhite;
+       box-shadow: 5px 5px 10px 0px;
+     }
+     .Player input{
+       width: 100%;
+       background-color: rgb(235, 138, 47);
+     }
+     .Player-items{
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+     .Artist,.things{
+       width: 25%;
+     }
+     .Controls{
+       width: 40%;
+     }
+     .Artist,.Controls,.things,.things span{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      /* width: 30%; */
+    }
+   .things i:hover, .Controls > *:hover{
+      color: gray;
+      font-size: x-large;
+      transition: 0.5s ease-in;
+    }
+    .Play-pause{
+      font-size: xxx-large;
+      color: orange;
+    }
+    .Artist img{
+      width:50px
+    }
+    .things a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      background-color: orange;
+      color: white;
+      width: 50px;
+      height: 30px;
+      border-radius: 20px;
+    }
+    .progress-area{
+      height: 6px;
+      width: 100%;
+      background: white;
+      border-radius: 50px;
+      cursor:pointer
+    }
+    .progress-area .progress-bar{
+      height: inherit;
+      width: 55%;
+      border-radius: inherit;
+      position: relative;
+      background: linear-gradient(90deg,black,blue);
+    }
+    .progress-bar::before{
+      content:"";
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      /* background: blue; */
+      border-radius: inherit;
+      top: 11%;
+      right: -5px;
+      transform: translateY(-50%);
+      background: inherit;
+      opacity: 0;
+      transition: opacity 0.2s ease-in;
+    }
+    .progress-area:hover .progress-bar::before{
+      opacity:1;
+    }
+    .show{
+      display: none;
+    }
+    .repCol{
+      color: orange;
+    }
+    .repCol:hover{
+      color: orange;
+    }
+    .image{
+      display: block;
+      position: relative;
+      width: 50%;
+    }
+    .image img {
+      /* width: 50%;
+      text-align:center; */
+      position: absolute;
+      width: inherit;
+    }
+    .image p {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .login-out{
+    display: flex;
+    justify-content: center;
+  }
+  .modal::before{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    background-color: black;
+    opacity: 0.3;
+  }
+  .fade{
+    transition: opacity .15s linear;
+  }
+  .modal.fade{
+    transition: transform .3s ease-out;
+  }
+  .login{
+
+    z-index: 200;
+    width: 50%;
+    text-align: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: whitesmoke 5px 5px 5px 5px;
+  }
+  .side img{
+    height: 450px;
+    border-top-left-radius:  25px ;
+    /* width: 380px; */
+    border-bottom-left-radius: 25px;
+  }
+  .forum{
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    margin-left: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .forum input{
+    width: 80%;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .plat{
+    display: flex;
+  }
+.forum i{
+display: flex;
+width: 100%;
+justify-content: flex-end;
+}
+#But{
+  background-color: rgb(255, 102, 0);
+  width: 30%;
+  color: white;
+   border-radius: 10px;
+}
+.show{
+  display: none;
+}
+      </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="Player">
+     <div class="Player-items">
+       <div class="Artist" alt="Hugh jack">
+         <img src="D:\Wynk\Photos\Slide\imgR-2.1.webp" alt="artist">
+         <h6>Peaches</h6>
+       </div>
+       <div class="Controls">
+            <i class="fa fa-crosshairs" aria-hidden="true"></i>
+            <i class="fas fa-arrow-alt-circle-left"></i>
+            <div class="Play-pause">
+               <i class="fa fa-play-circle" aria-hidden="true"></i>
+               <i class="fa fa-pause-circle show" aria-hidden="true"></i>
+            </div>
+            <i class="fas fa-arrow-alt-circle-right    "></i>
+            <i class="fas fa-circle-notch"></i>
+          </div>
+        <div class="things">
+        <span><p id="current">0:00 /</p><p id="duration">2:00</p></span>
+         <a href="">Auto</a>
+         <i class="fab fa-audible    "></i>
+         <i class="fa fa-list" aria-hidden="true"></i>
+        </div>
+     </div>
+     <div class="progress-area">
+        <div class="progress-bar"></div>
+     </div>
+     <audio src="" id="main-audio"></audio>
+  </div>
+  <div class="modal ">
+    <div class="login-out  ">
+      <div  class="login ">
+        <div class="side"><img src="D:\Wynk\Photos\Podcasts\login.png" alt=""></div>
+        <div class="forum">
+          <i class="fa fa-times" aria-hidden="true"></i>
+          <h3>Login/SignUp</h3>
+          <small>Get a personalised experience, and access all your music</small>
+          <input type="text" placeholder="User Name">
+          <input type="Password" placeholder="PassWord">
+          <input type="Button" id="But" value="Login">
+          <small>To Create CCount Install Wyynk App</small>
+          <div class="plat">
+            <img src="D:\Wynk\Photos\foot\footer-v2-but-app.png" alt="">
+            <img src="D:\Wynk\Photos\foot\footer-v2-but-play.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+  <script src="allMusic.js"></script>
+  <script src="main.js">
+  </script>
+  <script>
+    let Log = document.querySelector('.fa-user-circle');
+      Log.addEventListener('click',()=>{
+        let login = document.querySelector('.modal')
+         console.log(login);
+         login.classList.toggle('show') 
+        })  
+      let closeL = document.querySelector('.fa-times');
+        closeL.addEventListener('click',()=>{
+        let login = document.querySelector('.login')
+        login.style.display='none';
+    })
+  </script>
+</body>
+</html>

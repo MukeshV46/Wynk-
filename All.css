@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-cont{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    box-shadow: 5px 0px 5px 0px;
+    border-top: red 3px solid;
+    z-index: 100;
+}
+.nav-items{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-content: right;
+}
+.end-foot a,.nav-items a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-weight: 600;
+}
+.search{
+    border:1px solid gray;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    align-items: center;
+}
+.search input{
+    border: none;
+    outline:none;
+}
+i.tog-btn{
+    display: none;
+}
+i{
+    font-size: x-large;
+    text-align: center;
+}
+.icon{
+    display: flex;
+    justify-content: space-around;
+}
+.show{
+    display: none;
+}
+/* Carosuel */
+div .carousel-item.active{
+    display: flex;
+    justify-content: center;
+}
+.carousel img {
+padding: 20px;;
+width: 33%;
+border-radius: 50px;
+height: 300px;
+}
+.tik{
+    background-color: black;
+    border-radius: 40%;
+}
+.login-out{
+    display: flex;
+    justify-content: center;
+  }
+  .login{
+    width: 50%;
+    text-align: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: whitesmoke 5px 5px 5px 5px;
+  }
+  .side img{
+    height: 450px;
+    border-top-left-radius:  25px ;
+    /* width: 380px; */
+    border-bottom-left-radius: 25px;
+  }
+  .forum{
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    margin-left: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .forum input{
+    width: 80%;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+  }
+  .plat,.regist{
+      width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+.forum i{
+display: flex;
+width: 100%;
+justify-content: flex-end;
+}
+#But,#Reg{
+  background-color: rgb(255, 102, 0);
+  width: 30%;
+  color: white;
+   border-radius: 10px;
+}
+/* Album Slides */
+.album{
+    margin-left: 50px;
+}
+.Alb-slid{
+    display: flex;
+    justify-content: space-evenly;
+    /* width: %; */
+    margin-left: -50px;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+.cont{
+    position: relative;
+    width:170px ;
+}
+.cont img{
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+}
+.cont-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color:black ;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.icon{
+  cursor: pointer;
+  transform: translateY(30px);
+  transition: transform 0.25s;
+} 
+.cont-overlay:hover{
+    opacity: 0.7;
+}
+.cont-overlay:hover > *{
+    transform: translateY(0);
+}
+
+/* ---------------------- */
+ 
+  
+/* Footer */
+.foot{
+    bottom:-10px;
+    width: 90%;
+    height: 300px;    
+    margin-left: 70px;
+}
+.top-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 50;
+}
+.top-foot button{
+    display: none;
+}
+.wynkon{
+    width: 10%;
+    height: 90%;
+}
+.text{
+    flex-grow: 1;
+}
+/* mid-Footer */
+.row1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.item{
+    display: flex;
+    width: 25%;
+    flex-flow: column;
+}
+.item a{
+     text-decoration: none; color: black; font-weight: 500;
+     
+}
+.geners {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    
+  }
+.see{
+   display: flex;
+   /* width: 25%; */
+   /* flex-direction: row; */
+   
+}
+
+.end-foot{
+    font-weight: bolder;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+} 
+.icons{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+.ic{
+    text-align: center;
+    width: 15%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid gray;
+    /* background-color: blanchedalmond; */
+}
+.ic:hover{
+    width: 25%;
+    background-color: whitesmoke;
+    transition: 0.5s ease-in-out;
+}
+.fa-instagram:hover{
+    color: deeppink;
+}
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-twitter:hover{
+    color: skyblue;
+}
+.end-foot small{
+width: 50%;
+text-align: center;
+}
+@media screen and (max-width:700px) {
+    i.tog-btn{
+        display: block;
+    }
+    .search {
+      border: none;
+      width: auto;
+    }
+    .nav-items a,.search input,.fa.fa-language,.wynkon,.img{
+        display: none;
+    }
+    .nav-items{
+        width: 40%;
+    }
+    .foot{
+        width: 85%;
+    }
+    .top-foot{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        background-color: whitesmoke;
+        width: 100%;
+        margin-left: -40px;
+        height: 130px;
+        text-align: center;
+    }
+    .top-foot button{
+        display: block;
+        color: white;
+        background-color: rgb(201, 25, 2);
+        box-shadow: 0.3px 4px 29px 0 rgb(50 35 65 / 29%);
+        width: 20%;
+        height: 40px;
+        font-weight: 600;
+        border-radius: 30px;
+    }
+    .row1{
+        display: block;
+        width: 100%;
+        margin-left: -50px;
+    }
+    .item{
+        padding: 10px;
+        width: 100%;
+    }
+   
+    .see{
+         display: flex;
+         flex-direction: row;
+    }
+    .end-foot{
+        margin-left: -25px;
+        flex-flow: column;
+        text-align: center;
+        padding: 5px;
+    }   
+    .ic{
+        width: 10%;    
+    }
+    .ic:hover{
+        width: 12%;
+        background-color: ghostwhite;
+    }
+    .end-foot small{
+        width: 100%;
+        padding: 5px;
+        font-weight: bold;
+    }
+    .carousel{
+        display: none;
+    }
+    .Alb-slid .slides:nth-last-child(-n + 4) {
+        display: none;
+    }
+     
+
+}

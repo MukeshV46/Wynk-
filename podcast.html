@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="podcast.css">
+    <link rel="stylesheet" href="D:\Wynk\bootstrap-5.0.2-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="file:///D:/Frameworks%20and%20%20icons/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css"> 
+</head>
+<body>
+  <div class="hero"> 
+     <!-- Nav bar  -->
+     <nav class="nav-cont">
+         <i class=" tog-btn fa fa-bars"  aria-hidden="true"></i>
+         <div class="nav-head"><img src="D:\Wynk\Photos\nav\Wynklogo.svg" alt="black-logo"></div>
+         <div class="nav-items ">
+            
+            <a class="" href="#">HOME</a>
+            <a class="" href="#">MY MUSIC</a>
+            <a class="" href="#">PODCAST</a>
+            <a class="" href="#">DOWNLOAD APP</a>
+            
+            <div class="search">
+               <i class="fa fa-search" aria-hidden="true"></i>
+              <input type="" name="" id="in" placeholder="Search Music You Love!">
+            </div>
+            
+            <i onclick="mode(this)" class="fa fa-sun "></i>
+            <i class="fa fa-language" aria-hidden="true"></i>
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </div>
+      </nav>
+       
+      <!-- Carosuel Part  -->   
+
+      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+       <ol class="carousel-indicators">
+         <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+         <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+         <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+       </ol>
+       <div class="carousel-inner" role="listbox">
+         <div class="carousel-item active">
+           <img src="D:\Wynk\Photos\Podcasts\Arts.webp" class="img" alt="First slide">
+           <img src="D:\Wynk\Photos\Podcasts\comedy.webp" class="img" alt="First slide">
+           <img src="D:\Wynk\Photos\Podcasts\Education.webp"class="img"  alt="First slide">
+           <img src="D:\Wynk\Photos\Podcasts\Science.webp" class="img" alt="First slide">
+        </div>
+         <div class="carousel-item">
+          <img src="D:\Wynk\Photos\Podcasts\Arts.webp" alt="First slide">
+          <img src="D:\Wynk\Photos\Podcasts\comedy.webp" alt="First slide">
+          <img src="D:\Wynk\Photos\Podcasts\Education.webp" alt="First slide">
+          <img src="D:\Wynk\Photos\Podcasts\Science.webp" alt="First slide">
+        </div>
+       </div>
+       <button class="carousel-control-prev " type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon tik" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+       </button>
+       <button class="carousel-control-next " type="button" data-bs-target="#carouselId" data-bs-slide="next">
+         <span class="carousel-control-next-icon tik" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+         </button>
+     </div>
+       <!-- Sliders -->
+<br>
+       <div class="warm"></div>      
+          <div class="login-out">
+            <div  class="login show">
+              <div class="side"><img src="D:\Wynk\Photos\Podcasts\login.png" alt=""></div>
+              <form class="forum">
+                 <i class="fa fa-times" aria-hidden="true"></i>
+                 <h3>Login/SignUp</h3>
+                 <small>Get a personalised experience, and access all your music</small>
+                 <input type="text" placeholder="User Name" name="name">
+                 <input type="Password" placeholder="PassWord" name="pass">
+                <div class="regist">
+                    <input type="Button" id="But" value="Login">
+                    <input type="Button" id="Reg" value="Sign">
+                </div>
+                    <small>To Create CCount Install Wyynk App</small>
+                <div class="plat">
+                     <img src="D:\Wynk\Photos\foot\footer-v2-but-app.png" alt="">
+                     <img src="D:\Wynk\Photos\foot\footer-v2-but-play.png" alt="">
+                </div>
+              </form>
+            </div>
+          </div>
+       
+      
+  
+ 
+   <br>
+   <div class="album">    
+        
+      <h4>Latest Release!</h4>
+        
+        <div class="Alb-slid">
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-1.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>New Hindi Songs</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-2.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>New English Songs</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-3.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>Attangi Re</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-4.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>Scenic Drive</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-5.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>Chadigar Kare Aas</p>  
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-6.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>30</p>
+      </div>
+
+        </div>
+        <h4>Retero$</h4>
+        <div class="Alb-slid">
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-1.1.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>Nostaliga</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-1.2.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>Risi Kapoor</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-1.3.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>The Beatless Experience</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-1.4.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>Madhubala</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-1.5.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>King of Blues</p>  
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-1.6.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>Waheed Rahaman</p>
+      </div>
+
+        </div><h4>Retero$</h4>
+        <div class="Alb-slid">
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-2.1.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>Nostaliga</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-2.2.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>Risi Kapoor</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-2.3.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>The Beatless Experience</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-2.4.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>Madhubala</p>
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-2.5.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>King of Blues</p>  
+      </div>
+      <div class="slides">
+        <div class="cont">
+          <img class="img-eff" src="D:\Wynk\Photos\Slide\imgR-2.6.webp" alt="">
+          <div class="cont-overlay">
+            <div class="icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+          </div> 
+        </div>
+        <p>Waheed Rahaman</p>
+      </div>
+
+        </div>
+
+   </div>
+   <div class="Player show-play">
+    <div class="Player-items">
+      <div class="Artist" alt="Hugh jack">
+        <img src="D:\Wynk\Photos\Slide\imgR-2.1.webp" alt="artist">
+        <h6>Peaches</h6>
+      </div>
+      <div class="Controls ">
+           <i class="fa fa-crosshairs" aria-hidden="true"></i>
+           <i class="fas fa-arrow-alt-circle-left"></i>
+           <div class="Play-pause">
+              <i class="fa fa-play-circle "  aria-hidden="true"></i>
+              <i class="fa fa-pause-circle" style="display: none;" aria-hidden="true"></i>
+           </div>
+           <i class="fas fa-arrow-alt-circle-right"></i>
+           <i class="fas fa-circle-notch"></i>
+         </div>
+       <div class="things">
+       <span><p id="current">0:00 /</p><p id="duration">2:00</p></span>
+        <a href="">Auto</a>
+        <i class="fab fa-audible    "></i>
+        <i class="fa fa-list" aria-hidden="true"></i>
+       </div>
+    </div>
+    <div class="progress-area">
+       <div class="progress-bar"></div>
+    </div>
+    <audio   src="" id="main-audio"></audio>
+ </div>|
+
+     
+     <!-- -------------------------------------- -->
+     <!-- Footer -->
+     <div class="foot">
+        <div class="top-foot">
+          <img src="D:\Wynk\Photos\foot\footerIcon.svg" class="wynkon" alt="">
+          <div class="text">
+            <h4>Best way to Listen to Music! </h4>
+            <p>Don’t forget to install Wynk Music on your mobile phones</p>
+          </div>
+          <button>Get App</button>
+
+          <div class="img">
+            
+            <img src="D:\Wynk\Photos\foot\footer-v2-but-play.png" alt="">
+            <img src="D:\Wynk\Photos\foot\footer-v2-but-app.png" alt="">
+          </div>
+        </div>
+        <br><br>
+        <!-- nid-foot -->
+        <div class="row1"> 
+           <div class="item">
+            <a href="#">Latest Album</a>
+            <div class="geners see">
+                <small>Scenic Drive  |  Atrangi Re  |  Doctor Original Motion Picture Soundtrack  |  Shubh Vivah  |  Malik  |  Love Story  |  Ninna Sanihake  |  Praktan  |  Moosetape  |  Bhavartha Mauli  |  Yuva Sarkar  |  Kati Jeher Hai  |  Mal mahu jiban mati  |  30</small>
+                <!-- <span>hioahsd</span>
+                <span>hioahsd</span>
+                <span>hioahsd</span> -->
+            </div>
+            <!-- <i class="fa fa-arrow-circle-down aria-hidden="true"></i> -->
+          </div>
+           <div class="item">
+            <a href="#">Geners</a>
+            <div class="geners see">
+             <small>Rock Songs  |  Patriotic songs  |  Sufi Music  |  Ghazals  |  Workout Music  |  Devotional Songs  |  Sad Songs  |  DJ Songs</small>
+              <!-- <span>hioahsd</span>
+                <span>hioahsd</span>
+                <span>hioahsd</span> -->
+            </div>
+           </div>
+           <div class="item">
+            <a href="#">Old Songs</a>
+            <div class="geners see">
+                <small>Old Songs   |  Old Hindi Songs   |  Old English Songs   |  Old Punjabi Songs   |  Old Telugu Songs   |  Old Tamil Songs   |  Old Bengali Songs   |  Old Malayalam Songs   |  Old Kannada Songs</small>
+            </div>
+           </div>
+           <div class="item">
+            <a href="#">Top Artists</a>
+            <div class="geners see">
+              Guru Randhawa  |  Arijit Singh  |  Atif Aslam  |  Justin Bieber  |  Gulzar  |  Armaan Malik  |  Sidhu Moose Wala  |  Alan Walker  |  Udit Narayan  |  Sonu Nigam  |  Sid Sriram  |  Akhil  |  Darshan Raval  |  Shreya Ghoshal  |  Alka Yagnik
+            </div>
+           </div>
+        </div>
+        <br>
+        <div class="row1"> 
+          <div class="item">
+           <a href="#">Language</a>
+           <div class="geners see">
+              <small>New Bengali Songs  |  New Bhojpuri Songs  |  New English Songs  |  New Haryanvi Songs  |  New Hindi Songs  |  New Kannada Songs  |  New Marathi Songs  |  New Punjabi Songs  |  New Tamil Songs  |  New Telugu Songs  |  New Odiya Songs  |  New Rajasthani Songs  |  New Gujarati Songs  |  New Assamese Songs</small> 
+           </div>
+          </div>
+          <div class="item">
+           <a href="#">Latest Songs</a>
+           <div class="geners see">
+            <small>Apna Bana Lu  |  Madhuban  |  Soch Liya (From "Radhe Shyam")  |  Tum Bhi Mere  |  Slow Slow  |  CHALE BHI JAO  |  Rait Zara Si (From "Atrangi Re")  |  Main Pyaar Mein Hoon  |  Yeh Pahaad  |  Aashiqui Aa Gayi(From "Radhe Shyam")  |  Pyaar Chahiye  |  Ni Jana  |  Mera Yaar  |  Dhoondein Sitaare</small>
+          </div>
+          </div>
+          <div class="item">
+           <a href="#"> Top Songs</a>
+           <div class="geners see">
+            <small>Raataan Lambiyan (From "Shershaah")  |  Dil Galti Kar Baitha Hai (Feat. Mouni Roy)  |  Ranjha (From "Shershaah")  |  Tip Tip (From   |  Meri Zindagi Hai Tu (From   |  Lut Gaye (Feat. Emraan Hashmi)  |  Srivalli  |  Baarish Ban Jaana  |  Param Sundari  |  Barsaat Ki Dhun  |  Bijlee Bijlee  |  Jugnu  |  Saami Saami  |  Filhaal2 Mohabbat  |  Meri Aashiqui
+            </small>
+           </div>
+          </div>
+          <div class="item">
+           <a href="#">Top Searched Songs</a>
+           <div class="geners see">
+             <small>Coca Cola  |  Aankh Marey  |  Dil Chori  |  Leja Re  |  Bom Diggy Diggy  |  Tere Bin  |  Machayenge  |  Tera Yaar Hoon Main  |  Kar Gayi Chull  |  Morni Banke  |  Raabta (Title Track)  |  Chalti Hai Kya 9 Se 12  |  Galti Se Mistake  |  Sunny Sunny</small>
+          </div>
+          </div>
+        </div>
+       <!-- End Footer -->
+       <hr>
+      <div class="end-foot">
+             <div>
+               <a href="">ABOUT US |</a>
+               <a href="">ADVERTISE WITH  US |</a>
+               <a href="">PRIVACY POLICY |</a>
+               <a href="">TERM OF USE |</a>
+               <a href="">CONTACT US |</a>
+               <a href="">FEEDBACK |</a>
+               <a href="">HELLO TUNES</a>
+             </div>
+             <div class="icons">
+               <div class="ic">
+                <i class="fab fa-facebook" ></i>   
+               </div>
+               <div class="ic">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+               </div>
+               <div class="ic">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+               </div>
+             </div>
+          </div>
+          <hr>
+          <div class="end-foot">
+            <small>
+                Wynk Music is the one-stop music app for the latest to the greatest songs that you love. Play your favourite music online for free or download mp3. Enjoy from over 60 Lakh Hindi, English, Bollywood, Regional, Latest, Old songs and more.</small>
+              <small>2021 © All rights reserved | Airtel Digital Limited</small>
+          </div> 
+  </div>  
+</body>
+<script></script>
+<script src="podcast.js"></script>
+<script src="allMusic.js"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>

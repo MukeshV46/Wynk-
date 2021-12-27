@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Nav Bar  */
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+}
+
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: #b81568;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: radial-gradient(circle,#e94498,#b81568);
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 2;	
+}
+.change-bg{
+	width: 550px;
+	height: 540px;
+	transform: translate(-60%,-30%);
+}
+.change .bar{
+	background-color: white;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+/* ----------- */
+.Col-1{
+    background-image: url('D:/Wynk/Photos/Contact/contact-bg.jpg');
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.inner{
+    display: flex;
+    height:inherit;
+    text-align: center;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+.inner h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.inner p {
+    font-size: 40px;
+    font-weight: 600;
+}
+.cont{
+    background-color: rgb(223, 223, 215);
+    height: 100vh;
+}
+.contact{
+    margin-top: -200px;
+    margin-left: 100px;
+    width: 85%;
+    height: 600px;
+    display: flex;
+    background-color: black;
+    opacity: 0.99;
+}
+.contact .left{
+    width: 70%;
+    background-color: white;
+    opacity: 1;
+}
+.contact .right{
+    width: 30%;
+    background-image: url('D:/Wynk/Photos/Contact/contact-us-right-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.left h4{
+    text-align: center;
+    padding: 10px;
+}
+.right h4{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.inputs{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+    flex-flow: column;
+    width: 90%;
+    height: 90%;
+}
+ .doubles{
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+}
+.doubles input{
+    width: 48%;
+}
+.inputs input,textarea{
+    border-color: rgb(238, 232, 232);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+}
+.inputs .left-end{
+    width: 100%;
+    height: 40px;
+    display:flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.left-end a {
+    display: flex;
+    height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+    background-color: rgb(255, 94, 0);
+}
+.info{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+}
+.outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.outer:hover{
+    background-color: rgb(255, 102, 0);
+    transition: 0.5s  ease;
+}

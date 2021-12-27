@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="D:\Wynk\bootstrap-5.0.2-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="file:///D:/Frameworks%20and%20%20icons/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css"> 
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+  <div class="hero">
+    <div id="menu-bar">
+      <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+      </div>
+      <ul class="nav" id="nav">
+        <li><a href="">Home</a> </li>
+        <li><a href="">Wynk Music</a></li> 
+        <li><a href="">Airtel Tv</a></li> 
+        <li><a href="">Advertising</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+  </div>
+  <div class="menu-bg" id="menu-bg"></div>
+  <!-- Top  -->
+  <div class="start">
+      <div class="Top">
+          <div class="Top-phone">
+                  <div class="slides fade" >
+                    <img src="D:\Wynk\Photos\About\slide1.jpg">       
+                  </div>
+                  <div class="slides fade" >
+                    <img src="D:\Wynk\Photos\About\slide2.jpg">       
+                  </div>
+
+          </div>
+          <div class="Top-text">
+              <h1>Wynkers</h1>
+              <h1>Home to India's largest</h1>
+              <h2>mobile entertainment platforms for</h2>
+              <div class="tex fade">
+                <h2>Music</h2>
+              </div>
+              <div class="tex fade">
+                <h2>Airtel TV</h2>
+              </div>
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          </div>
+      </div>
+  </div>
+
+  <!-- ----------------- -->
+  <div class="Cent">
+    <div class="cont">
+      <img src="D:\Wynk\Photos\About\music.png" alt="">
+      <h2>Wynk Music</h2>
+      <p>ALL NEW,</p>
+      <p>ALL ABOUT YOU.</p>
+      <small class="hyp-link">Discover More<i class="fa fa-angle-right" aria-hidden="true"></i> </small>
+      <div class="last">
+        <h4><i class="fa fa-headphones" aria-hidden="true"></i> START LISTENING NOW</h4>
+      </div>
+    </div>
+    <div class="cont">
+         <img src="D:\Wynk\Photos\About\feature-airtel-movies.png" alt="">
+         <h2>Airtel Tv</h2>
+         <p>MOVIES, SHOWS,</p>
+          <p>LIVE TV...</p>
+         <small  class="hyp-link">Discover More <i class="fa fa-angle-right" aria-hidden="true"></i> </small>
+         <div class="last">
+          <h4><i class="fa fa-laptop" aria-hidden="true"></i> START WATCHING NOW</h4>
+        </div> 
+    </div>
+
+    </div>
+ </div>
+<!--------------------------------------->
+ <div class="End">
+        <h1>ADVERTISE WITH US</h1>
+        <p class="text-muted" style="font-size: 20px;">Reach out to 100Mn+ smartphone Users. Connect, engage, convert with our unique, performance driven advertising solutions.</p>
+        <small class="hyp-link" >Know More  <i class="fa fa-angle-right"></i></small>
+       <marquee id="mar" loop="infinite" behavior="scroll" direction="" scrollamount="7" >
+         <div class="image-end">
+           <img src="D:\Wynk\Photos\About\home-mobile-img-3.png" alt="">
+           <img src="D:\Wynk\Photos\About\home-mobile-img-4.png" alt="">
+           <img src="D:\Wynk\Photos\About\home-mobile-img-5.png" alt="">
+           <img src="D:\Wynk\Photos\About\home-mobile-img-6.png" alt="">
+           <img src="D:\Wynk\Photos\About\home-mobile-img-7.png" alt="">
+           <img src="D:\Wynk\Photos\About\home-mobile-img-8.png" alt="">
+           <img src="D:\Wynk\Photos\About\home-mobile-img-9.png" alt="">
+           <img src="D:\Wynk\Photos\About\home-mobile-img-10.png" alt="">
+        </div>
+      </marquee> 
+ </div>
+  </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1./dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  
+  slides[slideIndex-1].style.display = "block";  
+
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+var textIndex = 0;
+showText();
+
+function showText() {
+  var i;
+  var texts = document.getElementsByClassName("tex");
+  for (i = 0; i < texts.length; i++) {
+    texts[i].style.display = "none";  
+  }
+  textIndex++;
+  if (textIndex > texts.length) {textIndex = 1}    
+  
+  texts[textIndex-1].style.display = "block";  
+
+  setTimeout(showText, 3000); // Change image every 2 seconds
+}
+    
+   let shit = document.querySelector('.navbar-toggler-icon');
+    let Top = document.querySelector('.start .Top-phone');
+    shit.addEventListener('click',()=>{
+     Top.classList.toggle('show')
+})
+
+let marquee =document.querySelector('#mar')
+console.log(marquee);
+onMouseOver = marquee.stop();
+onMouseOut = marquee.start()
+</script>
+<script>
+  
+  console.log(fadeEff);
+  function onClickMenu(){
+	document.getElementById("menu").classList.toggle("change");
+	document.getElementById("nav").classList.toggle("change");
+	
+	document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+    </script>
+</body>
+</html>

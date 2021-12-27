@@ -1,0 +1,19 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Good",
+      "Pass": "PassWord"
+    },
+    {
+      "name": "GoodDemon",
+      "pass": "PassWord",
+      "id": 2
+    },
+    {
+      "name": "MUKESH KUMAR V",
+      "pass": "12345678",
+      "id": 3
+    }
+  ]
+}
